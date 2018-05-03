@@ -1,0 +1,23 @@
+@import "./../variables";
+
+.navbar.navbar-main {
+  color: white;
+  background-color: $main-navbar-bg;
+}
+
+.navbar-sub{
+  background-color: $sub-navbar-bg !important;
+
+  .nav-item{
+    .nav-link{
+      color: $white !important;
+    }
+
+    &.active{
+      .nav-link{
+        color: $subnav-link-active !important;
+      }
+    }
+  }
+
+}

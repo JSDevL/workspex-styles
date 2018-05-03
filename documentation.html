@@ -1,0 +1,656 @@
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Elements</h1>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h5>Fontawesome</h5>
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-arrow-up"></i>
+            <i class="fa fa-arrow-down oranged"></i>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Fonts</h3>
+            <div class="font-light size-16">Rubik light</div>
+            <div class="font-normal size-16">Rubik normal</div>
+            <div class="font-bold size-16">Rubik bold</div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Clickable Item (shows pointer on hover)</h3>
+            <p class="clickable">Random Text</p>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h5>Font Sizes</h5>
+            <div class="size-12">font size 12</div>
+            <div class="size-14">font size 14</div>
+            <div class="size-18">font size 18</div>
+            <div class="size-28">font size 28</div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-3">
+            <h3>Button</h3>
+            <button class="form-control btn btn-primary mr-2">
+                <span class="size-14">Button</span>
+            </button>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Button with icon</h3>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3">
+            <button class="form-control btn btn-primary mr-2">
+                <img src="assets/images/setting-white.svg">
+            </button>
+            <button class="form-control btn btn-primary mr-2 btn-light">
+                <img src="assets/images/setting-black.svg">
+            </button>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Plain Button like link</h3>
+            <button class="btn btn-link size-14">+ create new set</button>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <h3>Controls</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Label</h5>
+            <div class="form-group">
+                <label class="size-12">label</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Input</h5>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-input">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Search Input</h5>
+            <div class="form-group">
+                <input class="form-control form-control-search w-100 px-2 pr-5" name="search" placeholder="Search..." type="text">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Textarea</h5>
+            <div class="form-group">
+                <textarea class="form-control form-control-textarea"></textarea>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Select</h5>
+            <div class="form-group">
+                <select class="form-control form-control-select size-14 mr-2">
+                    <option value="active">Active</option>
+                    <option value="deactive">Deactive</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Multi Select</h5>
+            <div class="form-group">
+                <ss-multiselect-dropdown
+                        [options]="myOptions"
+                        [settings]="{buttonClasses: 'form-control form-control-select text-left'}"></ss-multiselect-dropdown>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <h5>Date Control</h5>
+            <div class="form-group">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Components</h1>
+
+            <h3>Header</h3>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-main p-0 py-3">
+    <div class="container flex-column align-items-stretch">
+        <div class="row navbar-row">
+            <div class="col"></div>
+            <div class="col-auto">
+                <a class="navbar-brand m-0 clickable">
+            <span class="size-36 d-block">
+              <img src="assets/images/logo.png">
+            </span>
+                </a>
+            </div>
+            <div class="col">
+                <div class="d-flex h-100">
+                    <form class="form-inline ml-auto">
+                        <a class="mr-3">
+                            <div class="position-relative d-inline-block">
+                                <div class="badge badge-secondary badge-notification rounded-circle position-absolute text-align-center p-0">
+                                    <div class="d-flex h-100 justify-content-center align-items-center">
+                      <span class="size-12 font-normal">
+                        03
+                      </span>
+                                    </div>
+                                </div>
+                                <span class="size-21">
+                    <img src="assets/images/messages.svg">
+                  </span>
+                            </div>
+                        </a>
+                        <a>
+              <span class="size-21">
+                <img src="assets/images/user-icon.svg">
+              </span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Sub Header</h3>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-light bg-light navbar-sub px-0 py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav mr-auto p-0">
+                    <li class="nav-item mr-2 clickable" [routerLink]="['/', 'admin', 'dashboard', 'recipients']"
+                        routerLinkActive="active">
+                        <a class="nav-link size-14 font-light pl-0">Recipients</a>
+                    </li>
+                    <li class="nav-item mr-2 clickable" [routerLink]="['/', 'admin', 'dashboard', 'surveys']"
+                        routerLinkActive="active">
+                        <a class="nav-link size-14 font-light">Create Survey</a>
+                    </li>
+                    <li class="nav-item mr-2 clickable" routerLinkActive="active">
+                        <a class="nav-link size-14 font-light">Results</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <h3>Module Navbar</h3>
+            <br>
+            <nav class="navbar navbar-light justify-content-between p-0">
+                <div>
+                    <h3 class="m-0 size-18">
+                        <span class="fa fa-chevron-left size-16 clickable" routerLink="../"></span>
+                        Details Title
+                    </h3>
+                    <span>Details of the set</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</div>
+
+<div class="footer-main p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <span>© 2018 WorkSpex All Rights Reserved</span>
+            </div>
+            <div class="col-6">
+                <div class="footer-nav-items text-right">
+                    <a class="footer-nav-link size-12 clickable">Privacy Policy</a>
+                    <a class="footer-nav-link size-12 ml-2 clickable">Terms of Service</a>
+                    <a class="footer-nav-link size-12 ml-2 clickable">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Sidebar</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-sidebar">
+            <div class="py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <input class="form-control form-control-search w-100 px-2 pr-5" name="search" placeholder="Search..." type="text">
+                        </div>
+                        <ul class="sidebar-nav p-0 list-unstyled">
+                            <li class="sidebar-nav-item"><a class="size-16 py-1 d-block clickable">All Sets(2)</a></li>
+                            <li class="sidebar-nav-item active"><a class="size-16 py-1 d-block clickable">Groups(2)</a></li>
+                            <li class="sidebar-nav-item"><a class="size-16 py-1 d-block clickable">Individuals(2)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Table</h3>
+            <br>
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="size-12 p-1 align-middle" scope="col">
+                        ID
+                        <i class="fa fa-arrow-up oranged"></i>
+                        <i class="fa fa-arrow-down oranged"></i>
+                    </th>
+                    <th class="size-12 p-1 align-middle" scope="col">Email</th>
+                    <th class="size-12 p-1 align-middle" scope="col">Name</th>
+                    <th class="size-12 p-1 align-middle" scope="col">Join Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="p-1 py-2 size-14 align-middle">1</td>
+                    <td class="p-1 py-2 size-14 align-middle">recipient1@example.com</td>
+                    <td class="p-1 py-2 size-14 align-middle">John Doe</td>
+                    <td class="p-1 py-2 size-14 align-middle">12/05/2017</td>
+                </tr>
+                <tr>
+                    <td class="p-1 py-2 size-14 align-middle">2</td>
+                    <td class="p-1 py-2 size-14 align-middle">recipient2@example.com</td>
+                    <td class="p-1 py-2 size-14 align-middle">Jane Doe</td>
+                    <td class="p-1 py-2 size-14 align-middle">06/01/2017</td>
+                </tr>
+                <tr>
+                    <td class="p-1 py-2 size-14 align-middle">3</td>
+                    <td class="p-1 py-2 size-14 align-middle">recipient2@example.com</td>
+                    <td class="p-1 py-2 size-14 align-middle">Jane Doe</td>
+                    <td class="p-1 py-2 size-14 align-middle">06/01/2017</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Material Tab</h3>
+            <br>
+        </div>
+        <div class="col-12">
+            <mat-tab-group>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <span class="size-14 font-normal">Settings</span>
+                    </ng-template>
+                    <p>This is First Tab</p>
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <span class="size-14 font-normal">Details</span>
+                    </ng-template>
+                    <p>This is Second Tab</p>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>cards</h3>
+            <br>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card survey-cards position-relative">
+                <div class="survey-single-card position-absolute border">card 1</div>
+                <div class="survey-single-card position-absolute border">card 2</div>
+                <div class="survey-single-card position-absolute border">card 3</div>
+                <div class="survey-single-card position-absolute border">card 4</div>
+                <div class="survey-single-card position-absolute border">card 5</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Progess bar</h3>
+            <br>
+        </div>
+        <div class="col-12 col-sm-8 col-md-8">
+            <div class="bar-container position-relative d-block w-100 px-1 rounded">
+                <div class="progress position-absolute rounded"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container d-none">
+    <div class="row">
+        <div class="col-12">
+            <h3>Modal</h3>
+            <br>
+        </div>
+        <div class="col-12">
+            <!-- TODO: 'modal-doc-wrapper' only for Documentation -->
+            <div class="modal-doc-wrapper " style="padding-top: 150px;height: 550px;background: rgba(0, 0, 0, 0.6);">
+                <div class="modal-centered fade d-block in" role="dialog">
+                    <div class="modal-dialog position-relative m-0">
+                        <div class="modal-content">
+                            <div class="modal-body modal-survey-completion p-4 text-center">
+                                <div>
+                                    <img class="survey-completion-icon position-relative rounded-circle" src="http://via.placeholder.com/150x150">
+                                </div>
+                                <div class="position-relative">
+                                    <h1><span class="size-28 greened"><b>You don’t have an active project</b></span></h1>
+                                    <br>
+                                    <span class="size-14">Despite the value of your answers for your company and your workplace, Goodnity delivers additional value with every question you answer. This contribution </span>
+                                </div>
+                                <div class="text-center">
+                                    <br>
+                                    <button class="btn btn-primary mr-2">
+                                        <span class="size-14">Get One</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Accordian</h3>
+            <br>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <div class="d-block component-accordian panel-group draggable">
+                    <div class="d-block component-accordian-group panel">
+                        <div class="panel card panel-default">
+                            <div class="panel-heading card-header">
+                                <div class="panel-title size-16 py-3">
+                                    Question Name 1
+                                    <span class="float-right size-30 accordian-header-icon">
+                      <i class="fa fa-chevron-down"></i>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block component-accordian panel-group draggable">
+                    <div class="d-block component-accordian-group panel">
+                        <div class="panel card panel-default">
+                            <div class="panel-heading card-header">
+                                <div class="panel-title size-16 py-3">
+                                    Question Name 2
+                                    <span class="float-right size-30 accordian-header-icon">
+                      <i class="fa fa-chevron-down"></i>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-12">
+                            accordian content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block component-accordian panel-group draggable">
+                    <div class="d-block component-accordian-group panel">
+                        <div class="panel card panel-default">
+                            <div class="panel-heading card-header">
+                                <div class="panel-title size-16 py-3">
+                                    Question Name 3
+                                    <span class="float-right size-30 accordian-header-icon">
+                      <i class="fa fa-chevron-down"></i>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <h3>Tooltip</h3>
+            <br>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <button type="button" class="btn btn-default btn-primary mb-2"
+                    tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                    placement="top">
+                Tooltip on top
+            </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <button type="button" class="btn btn-default btn-primary mb-2"
+                    tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                    placement="right">
+                Tooltip on right
+            </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <button type="button" class="btn btn-default btn-primary mb-2"
+                    tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                    placement="left">
+                Tooltip on left
+            </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <button type="button" class="btn btn-default btn-primary mb-2"
+                    tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                    placement="bottom">
+                Tooltip on bottom
+            </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <button type="button" class="btn btn-default btn-primary mb-2"
+                    tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                    placement="bottom">
+                Tooltip on bottom specified width
+            </button>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Pagination</h3>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <p class="mb-0">
+                    Results
+                    &nbsp;
+                    <select class="form-control form-control-select form-control-select-inline d-inline-block py-3">
+                        <option value="10">10</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>&nbsp; Showing <b>1-2</b>
+                    of
+                    <b>2</b>
+                </p>
+            </div>
+            <div>
+                <pagination-template>
+                    <button class="btn btn-link btn-xs"><span class="oranged"><b>&lt;&lt;</b></span>
+                    </button>
+                    <button class="btn btn-xs btn-primary">
+                        <span><b>1</b></span>
+                    </button>
+                    <button class="btn btn-xs btn-link">
+                        <span><b>2</b></span>
+                    </button>
+                    <button class="btn btn-link btn-xs">
+                        <span class="oranged"><b>&gt;&gt;</b></span>
+                    </button>
+                </pagination-template>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <h3>Ngx Model</h3>
+            <br>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+
+            <ng-template #template>
+                <div class="modal-header">
+                    <h4 class="modal-title pull-left">Modal</h4>
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This is a modal.
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <h3>Pie Graph</h3>
+            <app-pie-graph [pieData]="[20, 30, 40, 10]"></app-pie-graph>
+        </div>
+
+        <div class="col-12">
+            <h3>Pie Graph with content</h3>
+            <app-pie-graph [pieData]="[20, 30, 40, 10]">
+                <div class="pie-content container-fluid text-center h-100 w-100">
+                    <div class="row h-100">
+                        <div class="col p-2">
+                            Hello
+                        </div>
+                    </div>
+                </div>
+            </app-pie-graph>
+        </div>
+    </div>
+</div>

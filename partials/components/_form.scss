@@ -1,0 +1,15 @@
+.form-group {
+  label {
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+
+  .form-control {
+    & + .form-text {
+      padding-left: 5px;
+    }
+  }
+}

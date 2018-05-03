@@ -1,0 +1,88 @@
+@import "./../variables";
+
+.component-accordian.panel-group .bg-greened .panel.panel-default > .panel-heading {
+  background-color: $green;
+}
+
+.component-accordian.panel-group {
+
+  .panel.panel-default {
+    border: none;
+    box-shadow: none;
+    border-radius: 2px;
+
+    > .panel-heading {
+      border: none;
+      box-shadow: none;
+      border-radius: 2px;
+
+      padding: 0px 12px;
+
+      background-color: $accordian-panel-bg;
+
+      .accordian-header-icon{
+        margin-top: -8px;
+        position: relative;
+        top: 4px;
+      }
+    }
+
+    > .panel-heading + .panel-collapse > .panel-body {
+      border-top-width: 0px;
+      padding: 10px 0px;
+    }
+  }
+
+  .panel + .panel {
+    margin-top: 0px;
+    box-shadow: none;
+  }
+
+  .panel{
+    border: 1px solid $white;
+  }
+}
+
+.accordian-table-header {
+  .component-accordian.panel-group {
+    margin-bottom: 1px;
+
+    .panel {
+      border-radius: 0px;
+
+      .panel-heading {
+        padding: 0px;
+
+        .table.table-white {
+          margin-bottom: 0px;
+
+          tbody {
+            & > tr:first-child {
+              background-color: white;
+            }
+
+            & > tr {
+              border-bottom: none !important;
+
+              td {
+                border-top: none !important;;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .panel-open {
+      .panel-heading {
+        .table.table-white {
+          tbody {
+            & > tr:first-child {
+              background-color: $accordian-table-header-active-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

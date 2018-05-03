@@ -1,0 +1,53 @@
+@import "./../variables";
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+$sizes: 11 12 14 16 18 20 21 28 30 36 40 50 60 80;
+
+@each $size in $sizes {
+  .size-#{$size} {
+    font-size: $size + px !important;
+    line-height: 1;
+
+    > img {
+      display: inline;
+      height: $size + px;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    > .form-control {
+      line-height: $size + px !important;
+    }
+
+    > div.height-40{
+      min-height: $size + px !important;
+    }
+  }
+}
+
+.greened {
+  color: $green
+}
+
+.oranged {
+  color: $orange;
+}
+
+.reded {
+  color: $red;
+}
+
+.blacked {
+  color: $black;
+}

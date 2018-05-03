@@ -1,0 +1,51 @@
+@import '../variables';
+
+.pie-wrapper {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+  //overflow: hidden;
+
+  > .pie-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 50%;
+    border: transparent solid 15px
+  }
+
+  > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.pie-tooltip {
+  width: 180px;
+
+  position: absolute;
+  top: 50%;
+
+  pointer-events: none;
+
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+$indexes: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20;
+
+$bar-bg-greened-color: $green;
+
+.bar-bg-greened {
+  //border-width: 0 0 15px 0;
+
+  @each $index in $indexes {
+    &:nth-child(#{$index}) {
+      //border-color: darken($green, ($index * 10));
+      background-color: darken($green, ($index * 5));
+    }
+  }
+}

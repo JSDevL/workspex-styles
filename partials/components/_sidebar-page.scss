@@ -1,0 +1,31 @@
+@import "./../variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.container {
+  .row-view-height {
+    @include media-breakpoint-down(xs) {
+      min-height: auto;
+    }
+
+    min-height: 100vh;
+  }
+}
+
+.col-sidebar {
+  background-color: $table-header-bg;
+
+  .sidebar-nav {
+    .sidebar-nav-item {
+      &.active {
+        a {
+          color: $active-link;
+        }
+      }
+    }
+  }
+}
+
+.col-content {
+  padding-bottom: 10rem;
+  overflow: hidden;
+}

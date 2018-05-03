@@ -1,0 +1,56 @@
+@import "./../variables";
+
+.modal {
+  display: flex !important;
+  align-items: center;
+  .modal-dialog {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}
+
+.modal.modal-centered {
+  .modal-dialog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    margin: 0px;
+    transform: translate(-50%, 0%);
+
+    width: 600px;
+    max-width: 90%;
+
+    .modal-project-completion, .modal-survey-completion{
+      padding: 20px 20px 50px 20px;
+
+      button.close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      img.project-completion-icon, img.survey-completion-icon{
+        position: relative;
+        top: -120px;
+        margin-bottom: -145px;
+
+        width: 130px;
+        height: 130px;
+
+        border: 50px solid $white;
+        border-radius: 100%;
+
+        background-color: $white;
+
+        box-sizing: content-box;
+      }
+    }
+  }
+}
+
+.modal.in.modal-centered {
+  .modal-dialog {
+    transform: translate(-50%, -50%);
+  }
+}

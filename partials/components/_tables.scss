@@ -1,0 +1,17 @@
+@import "./../variables";
+
+.table {
+  border-bottom: 1px solid $table-border-color;
+  thead tr {
+    background-color: $table-header-bg;
+  }
+  thead th {
+    border-bottom: none;
+    color: $primary-text-color;
+  }
+
+  th,td{
+    height: 40px;
+  }
+
+}

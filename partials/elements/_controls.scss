@@ -1,0 +1,119 @@
+@import "./../variables";
+
+.form-control {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+
+  height: 40px;
+  line-height: 40px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:active, &:focus, &:visited {
+    border-color: $form-control-border;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+ss-multiselect-dropdown {
+  button.form-control.form-control-select.dropdown-toggle {
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+
+    & > span.caret {
+      display: none !important;
+    }
+  }
+
+  input {
+    pointer-events: none;
+  }
+
+  div.dropdown-menu {
+    width: 100%;
+  }
+}
+
+select.form-control.form-control-select, select.form-control.form-control-select:not([size]):not([multiple]), button.form-control.form-control-select {
+  @extend .form-control;
+
+  height: 40px;
+
+  padding-right: 30px;
+
+  background-image: url('/assets/images/down_arrow.svg');
+  background-position: right 10px center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+
+  &.form-control-select-inline {
+    line-height: inherit;
+    width: auto;
+
+    vertical-align: middle;
+  }
+}
+
+p {
+  .form-control-select-inline {
+    height: auto;
+  }
+}
+
+input.form-control.form-control-search {
+  @extend .form-control;
+
+  padding-right: 30px;
+
+  background-image: url('/assets/images/search.svg');
+  background-position: right 10px center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+
+input.form-control.form-control-input {
+  height: 40px;
+
+  font-size: 16px;
+  font-weight: normal;
+
+  padding: 10px 5px;
+
+  border-radius: 0;
+  border-color: $black;
+  border-width: 0 0 1px 0;
+  background: transparent;
+}
+
+textarea.form-control.form-control-textarea {
+  width: 100%;
+  min-height: 40px;
+  height: 80px;
+
+  padding: 10px 5px !important;
+
+  line-height: 1;
+}
+
+span.form-control.form-control-text {
+  @extend .form-control-input;
+  height: auto;
+  line-height: 1;
+  border-width: 0 0 0 0;
+}
+
+.mat-slider .mat-slider-thumb {
+  width: 30px;
+  height: 30px;
+
+  bottom: -15px;
+  right: -15px;
+
+  background-color: $green !important;
+  border-color: $green !important;
+
+  transform: none !important;
+}

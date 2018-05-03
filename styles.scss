@@ -1,0 +1,78 @@
+// fonts
+@font-face {
+  font-family: 'Rubik';
+  src: url(./assets/fonts/Rubik-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(./assets/fonts/Rubik-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(./assets/fonts/Rubik-Medium.ttf);
+  font-weight: 700;
+}
+
+// variables
+@import "partials/variables";
+
+// bootstrap, fontawesome overrides
+$font-size-base: 0.8rem;
+$primary: $orange;
+$body-color: $primary-text-color;
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-family-sans-serif: $font-family-rubik;
+$form-group-margin-bottom: 30px;
+$dropdown-item-padding-y: 0;
+$dropdown-item-padding-x: 0.5rem;
+$dropdown-link-active-color: $black;
+$dropdown-link-active-bg: $white;
+$tooltip-color: $black;
+$tooltip-bg: $tooltip-bg-color;
+$fa-font-path: "assets/fonts/fontawesome";
+
+// Bootstrap variable overrides to go before bootstrap import
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// Material themes
+//@import "node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+@import "partials/material_theme";
+@import "node_modules/ngx-toastr/toastr.css";
+
+// Dragula
+@import "node_modules/dragula/dist/dragula.css";
+
+@import "partials/globals";
+
+@import "partials/elements/fonts";
+@import "partials/elements/buttons";
+@import "partials/elements/progressbar";
+@import "partials/elements/controls";
+@import "partials/elements/backgrounds";
+@import "partials/elements/utils";
+
+@import "partials/components/navbar";
+@import "partials/components/accordians";
+@import "partials/components/footer";
+@import "partials/components/pagination";
+@import "partials/components/tables";
+@import "partials/components/modal";
+@import "partials/components/cards";
+@import "partials/components/sidebar-page";
+@import "partials/components/notification-icon";
+@import "partials/components/tabs";
+@import "partials/components/form";
+@import "partials/components/page-loader";
+@import "partials/components/tooltip.scss";
+@import "partials/components/popups.scss";
+@import "partials/components/graphs.scss";
+@import "partials/components/dropdown.scss";

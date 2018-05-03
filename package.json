@@ -1,0 +1,20 @@
+{
+  "name": "workspex-styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cdk": "^5.2.5",
+    "@angular/material": "^5.2.5",
+    "bootstrap": "^4.1.1",
+    "dragula": "^3.7.2",
+    "font-awesome": "^4.7.0",
+    "ngx-toastr": "^8.4.0",
+    "sass": "^1.3.1"
+  }
+}

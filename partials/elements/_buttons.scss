@@ -1,0 +1,44 @@
+@import "./../variables";
+
+.btn {
+  width: auto;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+.btn.btn-light {
+  background-color: $white;
+  border-color: $form-control-border;
+}
+
+.btn.btn-primary {
+  &:hover, &:active, &:focus {
+    background-color: $orange;
+    border-color: $orange;
+  }
+}
+
+button.btn.btn-primary.btn-active {
+  border: 1px solid $orange;
+  color: $orange;
+  background-color: transparent;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+button.btn.btn-primary.btn-survey-submit {
+  position: fixed;
+
+  bottom: 2rem;
+  right: 2rem;
+
+  z-index: 100;
+}
+
+.btn-group{
+  .btn{
+    min-width: 90px;
+  }
+}

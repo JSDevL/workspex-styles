@@ -1,0 +1,11 @@
+@import "./../variables";
+
+.dropdown-menu{
+  a{
+    &.clickable{
+      &:hover{
+        background-color: $dropdown-link-hover;
+      }
+    }
+  }
+}

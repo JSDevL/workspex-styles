@@ -1,0 +1,39 @@
+@import "variables";
+
+a {
+  &:hover, &:active {
+    text-decoration: none;
+  }
+  &:not([href]):not([tabindex]){
+    color: $orange;
+  }
+}
+
+[ng-reflect-router-link]:focus {
+  border: none;
+  outline: none;
+}
+
+*[hidden] {
+  display: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.open{
+  background-color: $sub-navbar-bg;
+}
+
+.draggable {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}

@@ -1,0 +1,15 @@
+@import "./../variables";
+
+.bar-container {
+  overflow: hidden;
+  height: 19px;
+  background-color: $progressbar-bg-color;
+  .progress {
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 40%;
+    height: 19px;
+    background-color: $progressbar-progress-color;
+  }
+}

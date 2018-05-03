@@ -1,0 +1,31 @@
+img.popup-icon {
+  position: relative;
+
+  top: -7rem;
+  margin-bottom: -7rem - 1.5rem;
+
+  width: 7rem;
+  height: 7rem;
+
+  border: 3.5rem solid white;
+  border-radius: 100%;
+  background-color: white;
+
+  box-sizing: content-box;
+
+  z-index: 1;
+
+  //@include media-breakpoint-down(md) {
+  //  margin-bottom: -130px;
+  //
+  //  width: 80px;
+  //  height: 80px;
+  //
+  //  border: 20px solid white;
+  //}
+
+  & + * {
+    position: relative;
+    z-index: 2;
+  }
+}
